@@ -1,0 +1,10 @@
+.dummy{
+	color : black;
+}
+
+.card {
+    background: white;
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .5rem;
+}

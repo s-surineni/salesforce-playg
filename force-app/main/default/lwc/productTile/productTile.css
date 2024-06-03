@@ -1,0 +1,24 @@
+.product-item {
+    display: flex;
+    flex-direction: column;
+    width: 16.9375rem;
+    gap: 0.625rem;
+    align-items: flex-start;
+    border-radius: 0.25rem;
+    border: 1px solid var(--Foundation-Gray-Neutral-90, #E5E5E5);
+    background: var(--Foundation-Gray-Neutral-100, #FFF);
+    margin: 1rem;
+}
+
+.product-item img {
+    height: 9.5rem;
+    align-self: stretch;
+}
+
+.product-item h3 {
+    padding: 0px 16px;
+}
+
+.product-description {
+    padding: 0px 16px;
+}

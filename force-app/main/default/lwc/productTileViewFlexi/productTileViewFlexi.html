@@ -1,0 +1,22 @@
+<template>
+	<template lwc:if={showPrductTile}>
+		<div class="product-tiles">
+			<template for:each={books} for:item="book">
+				<p key={book}>
+					<c-product-tile></c-product-tile>
+				</p>
+			</template>
+
+		</div>
+	</template>
+
+	<template lwc:else>
+		<c-numbered-card value={sampleVal}></c-numbered-card>
+		<template for:each={cardNums} for:item="book">
+			<p key={book}>
+				<c-numbered-card value={book}></c-numbered-card>
+			</p>
+		</template>
+	</template>
+	<div class="load-more">Load more</div>
+</template>
