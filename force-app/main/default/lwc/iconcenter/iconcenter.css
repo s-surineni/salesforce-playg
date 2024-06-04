@@ -1,0 +1,14 @@
+:host {
+	background-color: white;
+}
+
+.dummy{
+	color : black;
+}
+
+.centericon {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	gap: 0.5rem;
+}
