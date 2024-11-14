@@ -4,7 +4,7 @@
             <lightning-layout-item size="2">
                 <div class="image"></div>
             </lightning-layout-item>
-            <lightning-layout-item size="10">
+            <lightning-layout-item size="8">
                 <div>
                     {product.name}
                 </div>
@@ -14,6 +14,15 @@
                 <div>
                     {product.description}
                 </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="2">
+                <!-- Brand outline variant: Identifies the primary action in a group of buttons, but has a lighter look -->
+                <lightning-button variant="brand-outline" label="Brand Outline" title="Primary action with lighter look"
+                    onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+                <!-- Destructive variant: Identifies a potentially negative action -->
+                <lightning-button variant="destructive" label="Destructive" title="Destructive action"
+                    onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
             </lightning-layout-item>
         </lightning-layout>
     </lightning-card>
