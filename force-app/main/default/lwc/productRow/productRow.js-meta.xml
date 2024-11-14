@@ -1,0 +1,36 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>61.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Product row</masterLabel>
+	<description>Represents product row in a product list</description>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightning__RecordPage</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__AppPage">
+			<property name="enable" type="Boolean" default="true" label="Enable" />
+			<supportedFormFactors>
+				<supportedFormFactor type="Small"/>
+				<supportedFormFactor type="Large"/>
+			</supportedFormFactors>
+		</targetConfig>
+		<targetConfig targets="lightning__HomePage">
+			<property name="enable" type="Boolean" default="true" label="Enable" />
+			<supportedFormFactors>
+				<supportedFormFactor type="Large"/>
+			</supportedFormFactors>
+		</targetConfig>
+		<targetConfig targets="lightning__RecordPage">
+			<property name="enable" type="Boolean" default="true" label="Enable" />
+			<objects>
+				<object>Product2</object>
+			</objects>
+			<supportedFormFactors>
+				<supportedFormFactor type="Small"/>
+				<supportedFormFactor type="Large"/>
+			</supportedFormFactors>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>
