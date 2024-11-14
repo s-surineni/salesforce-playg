@@ -1,1 +1,4 @@
-h1 {}
+.image {
+    background-color: skyblue;
+    height: 5rem;
+}

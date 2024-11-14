@@ -1,7 +1,20 @@
 <template>
     <lightning-card>
         <lightning-layout>
-            Hello
+            <lightning-layout-item size="2">
+                <div class="image"></div>
+            </lightning-layout-item>
+            <lightning-layout-item size="10">
+                <div>
+                    {product.name}
+                </div>
+                <div>
+                    {product.price}
+                </div>
+                <div>
+                    {product.description}
+                </div>
+            </lightning-layout-item>
         </lightning-layout>
     </lightning-card>
 </template>

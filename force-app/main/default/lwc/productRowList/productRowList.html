@@ -1,5 +1,7 @@
 <template>
     <div class="slds-box">
-        <c-product-row></c-product-row>
+        <template for:each={products} for:item="aProduct">
+            <c-product-row key={aProduct.id} product={aProduct}></c-product-row>
+        </template>
     </div>
 </template>
